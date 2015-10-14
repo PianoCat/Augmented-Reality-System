@@ -1,0 +1,91 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+C_UPPER_SRCS := 
+CXX_SRCS := 
+C++_SRCS := 
+OBJ_SRCS := 
+CC_SRCS := 
+ASM_SRCS := 
+CPP_SRCS := 
+C_SRCS := 
+O_SRCS := 
+S_UPPER_SRCS := 
+CC_DEPS := 
+C++_DEPS := 
+EXECUTABLES := 
+C_UPPER_DEPS := 
+CXX_DEPS := 
+OBJS := 
+CPP_DEPS := 
+C_DEPS := 
+
+# Every subdirectory with source files must be described here
+SUBDIRS := \
+obj/local/armeabi/objs-debug/ptam \
+obj/local/armeabi/objs-debug/ptam/__/installfiles \
+obj/local/armeabi/objs-debug/gvars3/__/installfiles/src \
+obj/local/armeabi/objs-debug/f2c \
+obj/local/armeabi/objs-debug/cvd/__/installfiles/pnm_src \
+obj/local/armeabi/objs-debug/cvd/__/installfiles/cvd_src \
+obj/local/armeabi/objs-debug/cvd/__/installfiles/cvd_src/thread \
+obj/local/armeabi/objs-debug/cvd/__/installfiles/cvd_src/noarch \
+obj/local/armeabi/objs-debug/cvd/__/installfiles/cvd_src/fast \
+obj/local/armeabi/objs-debug/cvd/__/installfiles/cvd_src/OSX \
+obj/local/armeabi/objs-debug/cvd/__/installfiles/cvd_src/Linux \
+obj/local/armeabi/objs-debug/cpufeatures \
+obj/local/armeabi/objs-debug/clapack \
+obj/local/armeabi/objs-debug/clapack/__/INSTALL \
+obj/local/armeabi/objs-debug/blas \
+ndk-modules/lapack/jni \
+ndk-modules/lapack/jni/clapack/TESTING/MATGEN \
+ndk-modules/lapack/jni/clapack/TESTING/LIN \
+ndk-modules/lapack/jni/clapack/TESTING/EIG \
+ndk-modules/lapack/jni/clapack/SRC \
+ndk-modules/lapack/jni/clapack/SRC/VARIANTS/qr/LL \
+ndk-modules/lapack/jni/clapack/SRC/VARIANTS/lu/REC \
+ndk-modules/lapack/jni/clapack/SRC/VARIANTS/lu/LL \
+ndk-modules/lapack/jni/clapack/SRC/VARIANTS/lu/CR \
+ndk-modules/lapack/jni/clapack/SRC/VARIANTS/cholesky/TOP \
+ndk-modules/lapack/jni/clapack/SRC/VARIANTS/cholesky/RL \
+ndk-modules/lapack/jni/clapack/INSTALL \
+ndk-modules/lapack/jni/clapack/F2CLIBS/libf2c \
+ndk-modules/lapack/jni/clapack/BLAS/TESTING \
+ndk-modules/lapack/jni/clapack/BLAS/SRC \
+ndk-modules/gvars3/jni \
+ndk-modules/gvars3/installfiles/src \
+ndk-modules/gvars3/installfiles \
+ndk-modules/cvd/jni \
+ndk-modules/cvd/installfiles/test \
+ndk-modules/cvd/installfiles \
+ndk-modules/cvd/installfiles/python/CVD \
+ndk-modules/cvd/installfiles/progs \
+ndk-modules/cvd/installfiles/pnm_src \
+ndk-modules/cvd/installfiles/cvd_src \
+ndk-modules/cvd/installfiles/cvd_src/thread \
+ndk-modules/cvd/installfiles/cvd_src/posix \
+ndk-modules/cvd/installfiles/cvd_src/nothread \
+ndk-modules/cvd/installfiles/cvd_src/noarch \
+ndk-modules/cvd/installfiles/cvd_src/i686 \
+ndk-modules/cvd/installfiles/cvd_src/fast \
+ndk-modules/cvd/installfiles/cvd_src/Win32 \
+ndk-modules/cvd/installfiles/cvd_src/SSE2 \
+ndk-modules/cvd/installfiles/cvd_src/OSX \
+ndk-modules/cvd/installfiles/cvd_src/NEON \
+ndk-modules/cvd/installfiles/cvd_src/MMX \
+ndk-modules/cvd/installfiles/cvd_src/Linux \
+ndk-modules/cvd/installfiles/cvd_src/IRIX \
+ndk-modules/cvd/installfiles/cvd/Linux \
+ndk-modules/TooN/jni \
+jni \
+jni/PTAM \
+jni/PTAM/Build/Win32 \
+jni/PTAM/Build/OSX \
+jni/PTAM/Build/Linux \
+installfiles \
+installfiles/Build/Win32 \
+installfiles/Build/OSX \
+installfiles/Build/Linux \
+assets \
+

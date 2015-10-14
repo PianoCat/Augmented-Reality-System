@@ -1,0 +1,243 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+# Add inputs and outputs from these tool invocations to the build variables 
+C_SRCS += \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clagge.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/claghe.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clagsy.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clahilb.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clakf2.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clarge.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clarnd.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/claror.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clarot.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm1.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm2.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm3.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm5.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm6.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatme.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatmr.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatms.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatmt.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlagge.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlagsy.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlahilb.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlakf2.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlaran.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlarge.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlarnd.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlaror.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlarot.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm1.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm2.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm3.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm5.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm6.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm7.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatme.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatmr.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatms.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatmt.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slagge.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slagsy.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slahilb.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slakf2.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slaran.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slarge.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slarnd.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slaror.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slarot.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm1.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm2.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm3.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm5.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm6.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm7.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatme.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatmr.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatms.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatmt.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlagge.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlaghe.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlagsy.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlahilb.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlakf2.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlarge.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlarnd.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlaror.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlarot.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm1.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm2.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm3.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm5.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm6.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatme.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatmr.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatms.c \
+../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatmt.c 
+
+OBJS += \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clagge.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/claghe.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clagsy.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clahilb.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clakf2.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clarge.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clarnd.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/claror.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clarot.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm1.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm2.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm3.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm5.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm6.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatme.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatmr.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatms.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatmt.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlagge.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlagsy.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlahilb.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlakf2.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlaran.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlarge.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlarnd.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlaror.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlarot.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm1.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm2.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm3.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm5.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm6.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm7.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatme.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatmr.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatms.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatmt.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slagge.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slagsy.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slahilb.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slakf2.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slaran.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slarge.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slarnd.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slaror.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slarot.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm1.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm2.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm3.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm5.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm6.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm7.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatme.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatmr.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatms.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatmt.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlagge.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlaghe.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlagsy.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlahilb.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlakf2.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlarge.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlarnd.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlaror.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlarot.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm1.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm2.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm3.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm5.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm6.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatme.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatmr.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatms.o \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatmt.o 
+
+C_DEPS += \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clagge.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/claghe.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clagsy.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clahilb.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clakf2.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clarge.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clarnd.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/claror.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clarot.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm1.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm2.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm3.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm5.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatm6.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatme.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatmr.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatms.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/clatmt.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlagge.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlagsy.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlahilb.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlakf2.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlaran.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlarge.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlarnd.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlaror.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlarot.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm1.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm2.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm3.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm5.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm6.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatm7.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatme.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatmr.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatms.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/dlatmt.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slagge.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slagsy.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slahilb.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slakf2.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slaran.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slarge.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slarnd.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slaror.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slarot.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm1.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm2.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm3.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm5.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm6.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatm7.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatme.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatmr.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatms.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/slatmt.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlagge.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlaghe.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlagsy.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlahilb.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlakf2.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlarge.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlarnd.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlaror.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlarot.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm1.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm2.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm3.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm5.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatm6.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatme.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatmr.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatms.d \
+./ndk-modules/lapack/jni/clapack/TESTING/MATGEN/zlatmt.d 
+
+
+# Each subdirectory must supply rules for building sources it contributes
+ndk-modules/lapack/jni/clapack/TESTING/MATGEN/%.o: ../ndk-modules/lapack/jni/clapack/TESTING/MATGEN/%.c
+	@echo 'Building file: $<'
+	@echo 'Invoking: GCC C Compiler'
+	gcc -O2 -g -Wall -c -fmessage-length=0 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@:%.o=%.d)" -o "$@" "$<"
+	@echo 'Finished building: $<'
+	@echo ' '
+
+

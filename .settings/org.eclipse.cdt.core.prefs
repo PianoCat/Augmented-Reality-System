@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+environment/project/com.android.toolchain.gcc.225645489/LANG/delimiter=;
+environment/project/com.android.toolchain.gcc.225645489/LANG/operation=replace
+environment/project/com.android.toolchain.gcc.225645489/LANG/value=en_US
+environment/project/com.android.toolchain.gcc.225645489/LC_ALL/delimiter=;
+environment/project/com.android.toolchain.gcc.225645489/LC_ALL/operation=replace
+environment/project/com.android.toolchain.gcc.225645489/LC_ALL/value=en_US
+environment/project/com.android.toolchain.gcc.225645489/NDK_MODULE_PATH/delimiter=;
+environment/project/com.android.toolchain.gcc.225645489/NDK_MODULE_PATH/operation=replace
+environment/project/com.android.toolchain.gcc.225645489/NDK_MODULE_PATH/value=D\:\\workspace\\PTAMActivity\\ndk-modules
+environment/project/com.android.toolchain.gcc.225645489/append=true
+environment/project/com.android.toolchain.gcc.225645489/appendContributed=true

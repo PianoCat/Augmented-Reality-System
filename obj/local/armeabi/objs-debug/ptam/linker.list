@@ -1,0 +1,1 @@
+./obj/local/armeabi/objs-debug/ptam/ptam.o ./obj/local/armeabi/libPTAM.a ./obj/local/armeabi/libcvd.a ./obj/local/armeabi/libgvars3.a ./obj/local/armeabi/libTooN.a ./obj/local/armeabi/liblapack.a ./obj/local/armeabi/libcpufeatures.a ./obj/local/armeabi/libclapack.a ./obj/local/armeabi/libblas.a ./obj/local/armeabi/libf2c.a ./obj/local/armeabi/libgnustl_shared.so         
