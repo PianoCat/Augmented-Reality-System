@@ -185,8 +185,8 @@ void Tracker::TrackFrame(Image<byte> &imFrame, bool bDraw)
                 AssessTrackingQuality();
             }
         }
-//        if(mbDraw)
-//            RenderGrid();
+        if(mbDraw)
+            RenderGrid();
     } 
     else // If there is no map, try to make one.
         TrackForInitialMap(); 

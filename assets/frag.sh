@@ -11,6 +11,6 @@ void main()
    //将计算出的颜色给此片元
    vec4 finalColor=texture2D(sTexture, vTextureCoord);    
    //给此片元颜色值
-   gl_FragColor = finalColor*ambient+finalColor*specular+finalColor*diffuse;
+   gl_FragColor = finalColor;
 
 }   

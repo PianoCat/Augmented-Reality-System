@@ -24,7 +24,7 @@ public class LoadedObjectVertexNormalTexture
     int vCount=0;  
     
     public LoadedObjectVertexNormalTexture(MySurfaceView mv,float[] vertices,float[] normals,float texCoors[])
-    {    	
+    {
     	//初始化顶点坐标与着色数据
     	initVertexData(vertices,normals,texCoors);
     	//初始化shader        
@@ -73,9 +73,9 @@ public class LoadedObjectVertexNormalTexture
     public void initShader(MySurfaceView mv)
     {
     	//加载顶点着色器的脚本内容
-        mVertexShader=ShaderUtil.loadFromAssetsFile("vertex_new.sh", mv.getResources());
+        mVertexShader=ShaderUtil.loadFromAssetsFile("vertex.sh", mv.getResources());
         //加载片元着色器的脚本内容
-        mFragmentShader=ShaderUtil.loadFromAssetsFile("frag_new.sh", mv.getResources());  
+        mFragmentShader=ShaderUtil.loadFromAssetsFile("frag.sh", mv.getResources());  
         //基于顶点着色器与片元着色器创建程序
         mProgram = ShaderUtil.createProgram(mVertexShader, mFragmentShader);
         //获取程序中顶点位置属性引用  
@@ -152,7 +152,7 @@ public class LoadedObjectVertexNormalTexture
     	 //制定使用某套着色器程序
     	 GLES20.glUseProgram(mProgram);
          //将最终变换矩阵传入着色器程序
-         GLES20.glUniformMatrix4fv(muMVPMatrixHandle, 1, false, MatrixState.getFinalMatrix(), 0); 
+         GLES20.glUniformMatrix4fv(muMVPMatrixHandle, 1, false, MatrixState.getFinalMatrixFromMV(), 0); 
          //将位置、旋转变换矩阵传入着色器程序
          GLES20.glUniformMatrix4fv(muMMatrixHandle, 1, false, MatrixState.getMMatrix(), 0);   
          //将光源位置传入着色器程序   
@@ -194,8 +194,8 @@ public class LoadedObjectVertexNormalTexture
          GLES20.glEnableVertexAttribArray(maNormalHandle);  
          GLES20.glEnableVertexAttribArray(maTexCoorHandle); 
          //绑定纹理
-         //GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
-         //GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, texId);
+//         GLES20.glActiveTexture(GLES20.GL_TEXTURE0);
+//         GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, texId);
          //绘制加载的物体
          GLES20.glDrawArrays(GLES20.GL_TRIANGLES, 0, vCount); 
     }

@@ -323,7 +323,6 @@ void System::store_corner()
     __android_log_print(ANDROID_LOG_INFO, "PTAM", "storing corner: %i", (int)r);
 }
 
-
 void System::GUICommandCallBack(void *ptr, string sCommand, string sParams)
 {
     System* s = static_cast<System*>(ptr);

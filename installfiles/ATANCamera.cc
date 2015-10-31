@@ -145,7 +145,6 @@ Matrix<4> ATANCamera::MakeUFBLinearFrustumMatrix(double near, double far)
 {
   Matrix<4> m4 = Zeros;
   
-
   double left = mvImplaneTL[0] * near;
   double right = mvImplaneBR[0] * near;
   double top = mvImplaneTL[1] * near;

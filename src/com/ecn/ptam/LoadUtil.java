@@ -64,9 +64,12 @@ public class LoadUtil
 		      	if(tempsa[0].trim().equals("v"))
 		      	{//此行为顶点坐标
 		      	    //若为顶点坐标行则提取出此顶点的XYZ坐标添加到原始顶点坐标列表中
-		      		alv.add((Float.parseFloat(tempsa[1]))/25.0f);
-		      		alv.add(-((Float.parseFloat(tempsa[3]))/25.0f));
-		      		alv.add(((Float.parseFloat(tempsa[2])-16.f)/25.0f));
+//		      		alv.add((Float.parseFloat(tempsa[1]))/25.0f);
+//		      		alv.add(-((Float.parseFloat(tempsa[3]))/25.0f));
+//		      		alv.add(((Float.parseFloat(tempsa[2])-16.f)/25.0f));
+		      		alv.add((Float.parseFloat(tempsa[1])));
+		      		alv.add(-((Float.parseFloat(tempsa[3]))));
+		      		alv.add(((Float.parseFloat(tempsa[2]))));
 		      	}
 		      	else if(tempsa[0].trim().equals("vt"))
 		      	{//此行为纹理坐标行

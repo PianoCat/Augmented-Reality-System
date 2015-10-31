@@ -25,7 +25,7 @@ public class PTAMActivity extends Activity {
 	//绘制3d模型
 	private MySurfaceView mGLSurfaceView;
 	//绘制地图中的关键建筑
-//	private DrawSomething draw = null;
+//	private DrawPositions drawPositionsView;
 	
 	private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
 		@Override
@@ -61,28 +61,39 @@ public class PTAMActivity extends Activity {
 		_viewer = new CaptureViewer(this, _vs);
 	
 		Button btn_action = new Button(this);
+		btn_action.setId(1);
 		btn_action.setText("Start stereo init");
 		btn_action.setOnClickListener(_viewer);
 		
+		Button btn_intro = new Button(this);
+		btn_intro.setId(2);
+		btn_intro.setText("Introduction");
+		btn_intro.setOnClickListener(_viewer);
+		
+		Button btn_go = new Button(this);
+		btn_go.setId(3);
+		btn_go.setText("Go");
+		btn_go.setOnClickListener(_viewer);
+		
 		LinearLayout layout = new LinearLayout(this);
 		layout.addView(btn_action);
+		layout.addView(btn_intro);
+		layout.addView(btn_go);
 		
 		mGLSurfaceView = new MySurfaceView(getApplicationContext(),_viewer);
 		mGLSurfaceView.requestFocus();//获取焦点
-//		draw = new DrawSomething(getApplicationContext(), null);
-//		draw.setVisibility(View.VISIBLE);
+		mGLSurfaceView.setFocusableInTouchMode(true);
+//		mGLSurfaceView.setOnClickListener(mGLSurfaceView);
 		
 		FrameLayout fl = new FrameLayout(this);
 		fl.setForegroundGravity(Gravity.BOTTOM | Gravity.START);
 		fl.addView(_viewer);
-		//fl.addView(gsv);
 		fl.addView(mGLSurfaceView);
-//		fl.addView(draw);
+//		fl.addView(drawPositionsView);
 		fl.addView(layout);
 		
 		setContentView(fl);
 	}
-	
 	
 	@Override
 	public void onResume() {

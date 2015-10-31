@@ -5,7 +5,6 @@ import java.io.InputStream;
 import android.opengl.GLSurfaceView;
 import android.opengl.GLES20;
 import android.opengl.GLUtils;
-import android.util.Log;
 
 import javax.microedition.khronos.egl.EGLConfig;
 import javax.microedition.khronos.opengles.GL10;
@@ -14,14 +13,26 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.PixelFormat;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Toast;
 
 class MySurfaceView extends GLSurfaceView{
 //	private final float TOUCH_SCALE_FACTOR = 180.0f/320;//角度缩放比例
-    private SceneRenderer mRenderer;//场景渲染器    
+    private SceneRenderer mRenderer;//场景渲染器
+    
+    static int count = 1;
+    static float flag1 = 1.0f;
+    static float flag2 = 1.0f;
+    static float flag3 = 1.0f;
+//    private RotateThread1 mRotateThread1;
+//    private RotateThread2 mRotateThread2;
+//    private RotateThread3 mRotateThread3;
     
     private CaptureViewer capViewer;
     int textureId;//系统分配的纹理id
-//	int textureId2;
 	public MySurfaceView(Context context,CaptureViewer cap) {
         super(context);
         this.setEGLContextClientVersion(2); //设置使用OPENGL ES2.0
@@ -30,70 +41,70 @@ class MySurfaceView extends GLSurfaceView{
 		getHolder().setFormat(PixelFormat.TRANSLUCENT);
 		setEGLConfigChooser(8,8,8,8,16,0);
         mRenderer = new SceneRenderer();	//创建场景渲染器
-        setRenderer(mRenderer);				//设置渲染器		        
+        setRenderer(mRenderer);				//设置渲染器
         //setRenderMode(GLSurfaceView.RENDERMODE_CONTINUOUSLY);//设置渲染模式为主动渲染 
     }
 	
 	private class SceneRenderer implements GLSurfaceView.Renderer{
+		
+//		float yAngle = 0;
+//		float yAngle1 = 0;
+//		float yAngle2 = 0;
+		
     	//从指定的obj文件中加载对象
-//		LoadedObjectVertexNormalTexture lovo;
-		LoadedObjectVertexNormalTexture lovo2;
+		LoadedObjectVertexNormalTexture lovo;
+//		LoadedObjectVertexNormalTexture lovo2;
 //		LoadedObjectVertexNormalTexture lovo3;
 //		LoadedObjectVertexNormalTexture lovo4;
         public void onDrawFrame(GL10 gl){
         	//清除深度缓冲与颜色缓冲
             GLES20.glClear( GLES20.GL_DEPTH_BUFFER_BIT | GLES20.GL_COLOR_BUFFER_BIT);
-/*
+
             MatrixState.pushMatrix();
-            MatrixState.translate(0, 0, -40f);  
-            MatrixState.rotate(0, 0, 1, 0);
-            MatrixState.rotate(0, 1, 0, 0);
-            MatrixState.rotate(0, 0, 0, 1);
-//            float frustumMatrix[]=PTAM.getFrustumMatrix();
-//            MatrixState.setFrustumMatrix(frustumMatrix);
-//            float modelView[]=PTAM.getModelView();
-//        	MatrixState.setModelViewMatrix(modelView);
-            if(lovo!=null){
-            	if(capViewer.pressCount==2 && PTAM.drawGrid()){
-            		lovo.drawSelf();
-            	}
-            }   
-            MatrixState.popMatrix();*/
-            
-            MatrixState.pushMatrix();
-            MatrixState.translate(0, 0, -25f);
-            MatrixState.rotate(270, 0, 1, 0);
-            MatrixState.rotate(180, 1, 0, 0);
-//            MatrixState.rotate(0, 0, 0, 1);
-//            float frustumMatrix1[]=PTAM.getFrustumMatrix();
-//            MatrixState.setFrustumMatrix(frustumMatrix1);
-//            float modelView1[]=PTAM.getModelView();
-//         	MatrixState.setModelViewMatrix(modelView1);
-            if(lovo2!=null){
-            	if(capViewer.pressCount==2){
-            		lovo2.drawSelf();
-            	}
-            }
+
+            float frustumMatrix[]=PTAM.getFrustumMatrix();
+            MatrixState.setFrustumMatrix(frustumMatrix);
+            float modelView[]=PTAM.getModelView();
+        	MatrixState.setModelViewMatrix(modelView);
+        	if(lovo != null){
+        		if(capViewer.pressCount==2){
+        			if(PTAM.drawGrid()){
+                		lovo.drawSelf(textureId);
+//                		lovo.drawSelf();
+        			}
+                }
+        	}
             MatrixState.popMatrix();
             /*
             MatrixState.pushMatrix();
-            MatrixState.translate(0, 0, -56f);  
-            MatrixState.rotate(180, 0, 0, 1);
-            MatrixState.rotate(0, 0, 1, 0);
-            MatrixState.rotate(0, 1, 0, 0);  
-            MatrixState.rotate(0, 0, 0, 1);
-            if(lovo3!=null){
-            	if(capViewer.pressCount==2 && PTAM.drawGrid()){
-            		lovo3.drawSelf();
-            	}
+            MatrixState.rotate(yAngle1, 0, 1, 0);
+            if(flag2<=1.8){
+            	MatrixState.scale(flag2, flag2, flag2);
             }
+        	if(count==4){
+        		lovo2.drawSelf();
+        		mRotateThread2 = new RotateThread2();
+                mRotateThread2.start();
+        	}
             MatrixState.popMatrix();
             
             MatrixState.pushMatrix();
-            MatrixState.translate(0, 0, -25f);  
-            MatrixState.rotate(0, 0, 1, 0);
-            MatrixState.rotate(0, 1, 0, 0);
-            MatrixState.rotate(0, 0, 0, 1);
+            MatrixState.rotate(yAngle2, 0, 1, 0);
+            if(flag3<=1.8){
+            	MatrixState.scale(flag3, flag3, flag3);
+            }
+        	if(count==6){
+        		lovo3.drawSelf();
+        		mRotateThread3 = new RotateThread3();
+        		mRotateThread3.start();
+        	}
+            MatrixState.popMatrix();
+            
+            MatrixState.pushMatrix();
+            float frustumMatrix[]=PTAM.getFrustumMatrix();
+            MatrixState.setFrustumMatrix(frustumMatrix);
+            float modelView[]=PTAM.getModelView();
+        	MatrixState.setModelViewMatrix(modelView);
             if(lovo4!=null){
             	if(capViewer.pressCount==2 && PTAM.drawGrid()){
             		lovo4.drawSelf();
@@ -105,13 +116,14 @@ class MySurfaceView extends GLSurfaceView{
 
         public void onSurfaceChanged(GL10 gl, int width, int height) {
             //设置视窗大小及位置 
-        	GLES20.glViewport(0, 0, width, height); 
+        	GLES20.glViewport(0, 0, width, height);
         	//计算GLSurfaceView的宽高比
             float ratio = (float) width / height;
             //调用此方法计算产生透视投影矩阵
             MatrixState.setProjectFrustum(-ratio, ratio, -1, 1, 2, 100);
             //调用此方法产生摄像机9参数位置矩阵
-            MatrixState.setCamera(0,0,0,0f,0f,-1f,0f,1.0f,0.0f);
+            MatrixState.setCamera(0,0,5,0f,0f,-1f,0f,1.0f,0.0f);
+//            MatrixState.setCamera(0,0,0,0f,0f,-1f,0f,1.0f,0.0f);
         }
 
         public void onSurfaceCreated(GL10 gl, EGLConfig config){
@@ -125,15 +137,15 @@ class MySurfaceView extends GLSurfaceView{
             MatrixState.setInitStack();
             //初始化光源位置
             MatrixState.setLightLocation(40, 10, 20);
-            //加载要绘制的物体
-//            lovo=LoadUtil.loadFromFile("southdoor.obj", MySurfaceView.this.getResources(),MySurfaceView.this,7f,-2f,5f);
-            lovo2=LoadUtil.loadFromFile("xrd.obj",MySurfaceView.this.getResources(),MySurfaceView.this,0,0,0);
-//            lovo3=LoadUtil.loadFromFile("luxun.obj",MySurfaceView.this.getResources(),MySurfaceView.this,-2f,3f,20f);
-//            lovo4=LoadUtil.loadFromFile("jxg.obj",MySurfaceView.this.getResources(),MySurfaceView.this,6.5f,2,1.3f);
-            //加载纹理
-//            textureId=initTexture(R.drawable.ghxp);
+            
+            lovo=LoadUtil.loadFromFile("luxun_texture.obj", MySurfaceView.this.getResources(),MySurfaceView.this);
+//            lovo2=LoadUtil.loadFromFile("jgx.obj",MySurfaceView.this.getResources(),MySurfaceView.this,0,0,0);
+//            lovo3=LoadUtil.loadFromFile("luxun.obj",MySurfaceView.this.getResources(),MySurfaceView.this,0,0,0);
+//            lovo4=LoadUtil.loadFromFile("jxg.obj",MySurfaceView.this.getResources(),MySurfaceView.this,0,0,0);
+            textureId=initTexture(R.drawable.texture_luxun);
         }
     }
+	
   	public int initTexture(int drawableId){//textureId
 		//生成纹理ID
 		int[] textures = new int[1];
@@ -142,8 +154,8 @@ class MySurfaceView extends GLSurfaceView{
 				1,          //产生的纹理id的数量
 				textures,   //纹理id的数组
 				0           //偏移量
-		);    
-		int textureId=textures[0];    
+		);
+		int textureId=textures[0];
 		GLES20.glBindTexture(GLES20.GL_TEXTURE_2D, textureId);
 		GLES20.glTexParameterf(GLES20.GL_TEXTURE_2D, GLES20.GL_TEXTURE_MIN_FILTER,GLES20.GL_NEAREST);
 		GLES20.glTexParameterf(GLES20.GL_TEXTURE_2D,GLES20.GL_TEXTURE_MAG_FILTER,GLES20.GL_LINEAR);
@@ -155,7 +167,7 @@ class MySurfaceView extends GLSurfaceView{
         Bitmap bitmapTmp;
         try{
         	bitmapTmp = BitmapFactory.decodeStream(is);
-        } 
+        }
         finally{
             try{
                 is.close();
@@ -168,12 +180,13 @@ class MySurfaceView extends GLSurfaceView{
 	   	GLUtils.texImage2D(
 	    		GLES20.GL_TEXTURE_2D, //纹理类型
 	     		0, 
-	     		GLUtils.getInternalFormat(bitmapTmp), 
+	     		GLUtils.getInternalFormat(bitmapTmp),
 	     		bitmapTmp, //纹理图像
-	     		GLUtils.getType(bitmapTmp), 
+	     		GLUtils.getType(bitmapTmp),
 	     		0 //纹理边框尺寸
 	     );
 	    bitmapTmp.recycle(); 		  //纹理加载成功后释放图片
         return textureId;
 	}
+
 }

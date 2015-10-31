@@ -37,14 +37,19 @@ containing a value of this type.
         public static final int show_fps=0x7f010000;
     }
     public static final class drawable {
-        public static final int ghxp=0x7f020000;
-        public static final int ic_launcher=0x7f020001;
-        public static final int icon=0x7f020002;
-        public static final int lou=0x7f020003;
-        public static final int rock=0x7f020004;
-        public static final int snork=0x7f020005;
-        public static final int texture1=0x7f020006;
-        public static final int texture2=0x7f020007;
+        public static final int dialog_bg=0x7f020000;
+        public static final int dialog_title_image=0x7f020001;
+        public static final int ghxp=0x7f020002;
+        public static final int ic_launcher=0x7f020003;
+        public static final int icon=0x7f020004;
+        public static final int lins=0x7f020005;
+        public static final int lou=0x7f020006;
+        public static final int rock=0x7f020007;
+        public static final int snork=0x7f020008;
+        public static final int texture1=0x7f020009;
+        public static final int texture2=0x7f02000a;
+        public static final int texture_luxun=0x7f02000b;
+        public static final int xmu=0x7f02000c;
     }
     public static final class id {
         public static final int any=0x7f050000;
@@ -56,6 +61,8 @@ containing a value of this type.
     }
     public static final class string {
         public static final int app_name=0x7f040000;
+        public static final int btn_cancel=0x7f040002;
+        public static final int btn_ok=0x7f040001;
     }
     public static final class styleable {
         /** Attributes that can be used with a CameraBridgeViewBase.

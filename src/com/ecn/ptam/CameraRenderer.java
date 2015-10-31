@@ -9,7 +9,6 @@ import java.nio.IntBuffer;
 import android.graphics.SurfaceTexture;
 import android.util.Log;
 
-
 /*
  * Renders the camera frame as an OpenGL texture
  */
@@ -20,7 +19,6 @@ public class CameraRenderer extends GLRenderer {
 	private IntBuffer _id;
 	private IntBuffer _tex_id;
 	
-	
 	public CameraRenderer(VideoSource vs) {
 		_vs = vs;
 	}
@@ -28,7 +26,7 @@ public class CameraRenderer extends GLRenderer {
 	public void draw() {
 		_tex.updateTexImage();
 		
-		Log.d("camera draw", "camera draw");
+//		Log.d("camera draw", "camera draw");
 		
 		glEnable(GL_TEXTURE_EXTERNAL_OES);
 		glBindTexture(GL_TEXTURE_EXTERNAL_OES, _tex_id.get(0));

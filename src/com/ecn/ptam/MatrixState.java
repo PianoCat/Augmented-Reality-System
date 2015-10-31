@@ -9,12 +9,12 @@ import android.opengl.Matrix;
 public class MatrixState 
 {
 	private static float[] mProjMatrix = new float[16];//4x4矩阵 投影用
-    private static float[] mVMatrix = new float[16];//摄像机位置朝向9参数矩阵   
+    private static float[] mVMatrix = new float[16];//摄像机位置朝向9参数矩阵
     private static float[] currMatrix;//当前变换矩阵
     public static float[] lightLocation=new float[]{0,0,0};//定位光光源位置
-    public static FloatBuffer cameraFB;    
+    public static FloatBuffer cameraFB;
     public static FloatBuffer lightPositionFB;
-    private static float[] mMVMatrix=new float[16];//model view
+    private static float[] mMVMatrix=new float[16];
     public static Stack<float[]> mStack=new Stack<float[]>();//保护变换矩阵的栈
     
     public static void setInitStack()//获取不变换初始矩阵
@@ -46,7 +46,6 @@ public class MatrixState
     	Matrix.rotateM(currMatrix,0,angle,x,y,z);
     }
     
-    
     //设置摄像机
     public static void setCamera
     (
@@ -63,7 +62,7 @@ public class MatrixState
     {
     	Matrix.setLookAtM
         (
-        		mVMatrix, 
+        		mVMatrix,
         		0, 
         		cx,
         		cy,
@@ -154,13 +153,11 @@ public class MatrixState
     	t[13]=0.f;
     	t[14]=0.f;
     	Matrix.transposeM(mMVMatrix, 0, t,0);
-    	
     }
     
     public static void setFrustumMatrix(float []ftMatrix){
     	for(int i=0;i<ftMatrix.length;i++)
     		mProjMatrix[i]=ftMatrix[i];
-    	
     }
     
     public static float[] getFinalMatrixFromMV()
